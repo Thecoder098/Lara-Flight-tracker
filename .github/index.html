@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lara Airlines</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lara Airlines</h1>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <h2>Book Your Flight</h2>
+            <form id="flight-search-form">
+                <label for="from">From:</label>
+                <input type="text" id="from" required>
+                
+                <label for="to">To:</label>
+                <input type="text" id="to" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                
+                <button type="submit">Search Flights</button>
+            </form>
+        </section>
+        
+        <section id="results" class="hidden">
+            <h2>Available Flights</h2>
+            <ul id="flight-list"></ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Lara Airlines. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
